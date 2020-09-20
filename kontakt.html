@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technikum Informatyczne</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <div class="logo">
+                <img src="./img/logo_zsk_m.png" alt="zsk" class="logo-img">
+            </div>
+            <nav class="page-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./zawod.html">O zawodzie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="banner">
+                    <img src="./img/monito.png" alt="">
+                    <h1 class="banner-header">Technikum Informatyczne</h1>
+            </section>
+            <section class="main">
+                <div class="contact-form">
+
+                    <form class="form">
+                        <h2 class="main-content-text">Kontakt</h2>
+                        <label for="name"></label>
+                        <input type="text" for="name" placeholder="Imię" class="contact-input" id="name">
+                        <label for="username"></label>
+                        <input type="text" for="surname" placeholder="Nazwisko" class="contact-input" id="surname">
+                        <label for="mail"></label>
+                        <input type="email" for="mail" placeholder="Email" class="contact-input" id="Email">
+                        <textarea placeholder="Wpisz wiadomość" class="contact-input" id="Text"></textarea>
+                        <div class="regulatoins">
+                            <input type="checkbox" class="regulations">
+                            <label for="regulations">Zapoznałem się z regulaminem</label>
+                        </div>
+                        <div class="buttons">
+                            <button class="contact-btn" onclick="czy()">Wyczyść</button >
+                            <button class="contact-btn" onclick="formula()">Wyślij</button>
+                        </div>
+                    </form>
+                </div>
+                    <div class="displays">
+                        <div class="red-text"></div>
+                        <div class="name-cont"></div>
+                        <div class="text-cont"></div>
+                </div>
+            </section>
+            <footer class="footer">
+                <p>Jakub Lesiński 4D</p>
+            </footer>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
